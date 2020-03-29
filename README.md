@@ -4,3 +4,9 @@
 
 https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANioezbgUWlbjrvE/edit?usp=sharing
 
+| First Name | Last Name |
+| ----------- | ----------- |
+| Kevin | Kowalski |
+| Marcin | Perkowski |
+| Jonathan | Vega |
+
