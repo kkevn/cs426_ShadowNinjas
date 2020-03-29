@@ -6,7 +6,7 @@ https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANioezbgUWlbjrvE/
 
 | First Name | Last Name |
 | ----------- | ----------- |
-| Kevin | | Kowalski |
+| Kevin | Kowalski |
 | Marcin | Perkowski |
 | Jonathan | Vega |
 
