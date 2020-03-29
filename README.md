@@ -2,7 +2,9 @@
 
 ## Design Document
 
-https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANioezbgUWlbjrvE/edit?usp=sharing
+[Google Doc](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANioezbgUWlbjrvE/edit?usp=sharing)
+
+## Team Members
 
 | First Name | Last Name |
 | ----------- | ----------- |
