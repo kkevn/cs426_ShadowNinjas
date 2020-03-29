@@ -1,3 +1,4 @@
-example code for responding to player actions, at least 4 -- Tue by 11:59pm (estimate: 3h)
-example code for ending the stage -- Tue by 11:59pm (estimate: 2h)
-example code for losing life -- Tue by 11:59pm (estimate: 3h)
+# Schedule and deliverables:
+- example code for responding to player actions, at least 4 -- Tue by 11:59pm (estimate: 3h)
+- example code for ending the stage -- Tue by 11:59pm (estimate: 2h)
+- example code for losing life -- Tue by 11:59pm (estimate: 3h)
