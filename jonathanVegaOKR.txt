@@ -1,0 +1,6 @@
+Schedule and deliverable:
+
+	Ninja model -- Monday by 5pm (estimate: 5 hrs)
+	example code for collision detection -- Wednesday by 5pm (estimate: 5 hrs)
+	example code for responding to player actions, at least 1 -- Wed by 10pm (estimate: 4 hrs)
+	
