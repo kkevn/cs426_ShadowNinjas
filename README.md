@@ -4,8 +4,9 @@
 
 https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANioezbgUWlbjrvE/edit?usp=sharing
 
-| Syntax | Description |
+| First Name | Last Name |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Kevin | | Kowalski |
+| Marcin | Perkowski |
+| Jonathan | Vega |
 
