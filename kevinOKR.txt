@@ -1,0 +1,4 @@
+Schedule and deliverable:
+	example code for moving crates -- Fri by 10pm (estimate: 2hrs)
+	example code for extinguising torches -- Sat by 10pm (estimate: 3hrs)
+	base level design -- Sun by 10pm (estimate: 5hrs)
