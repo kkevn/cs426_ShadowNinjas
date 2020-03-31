@@ -1,48 +1,61 @@
 ﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
-
-    float movementSpeed = 0.1f;
-    float rotationSpeed = 200f;
-    float jumpForce = 300f;
-    float throwForce = 2000f;
-
+public class PlayerController : MonoBehaviour
+{
     public GameObject ShurikenSpawn;
     public GameObject Shuriken;
+    public Transform playerBody;
+    public Transform groundCheck;
+    public LayerMask ground;
 
+    public float movementSpeed = 12f;
+    public float throwForce = 2000f;
+    public float rotationSpeed = 200f;
+    public float groundDistance = 0.4f;
+    public float jumpHeight = 3f;
+
+    bool isGrounded;
     Rigidbody rb;
-    Transform t;
+    Vector3 move;
 
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
         rb = GetComponent<Rigidbody>();
-        t = GetComponent<Transform>();
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
+        // Checks if player is touching ground
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
 
-        // throw shuriken on mouse click
-        if (Input.GetButtonDown("Fire1")) {
-            GameObject thrownShuriken = GameObject.Instantiate(Shuriken, ShurikenSpawn.transform.position, ShurikenSpawn.transform.rotation) as GameObject;
-            thrownShuriken.GetComponent<Rigidbody>().AddForce(thrownShuriken.transform.forward * throwForce);
+        // Gets the input of W and S
+        move = Vector3.zero;
+        move.z = Input.GetAxis("Vertical");
+
+        // If player is touching ground and pressed space he will jump
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
         }
-
-        // get z direction movement
-        var z = Input.GetAxis("Vertical") * movementSpeed;
 
         // rotate player on A and D keys
         if (Input.GetKey(KeyCode.D))
-            t.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+            playerBody.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
         else if (Input.GetKey(KeyCode.A))
-            t.rotation *= Quaternion.Euler(0, - rotationSpeed * Time.deltaTime, 0);
+            playerBody.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
 
-        // player can jump when hitting spacebar
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            rb.AddForce(t.up * jumpForce);
+        // throw shuriken on mouse click
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject thrownShuriken = GameObject.Instantiate(Shuriken, ShurikenSpawn.transform.position, ShurikenSpawn.transform.rotation) as GameObject;
+            thrownShuriken.GetComponent<Rigidbody>().AddForce(thrownShuriken.transform.forward * throwForce);
         }
-
-        // move in world space
-        t.Translate(0, 0, z);
+    }
+    // For cleaner movement despite fps difference
+    private void FixedUpdate()
+    {
+        transform.Translate(move * movementSpeed * Time.fixedDeltaTime);
     }
 }
