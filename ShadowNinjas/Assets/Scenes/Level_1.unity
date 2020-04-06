@@ -307,6 +307,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerNinja
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e60959fe16b88934793fc9fadb2edcdb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60959fe16b88934793fc9fadb2edcdb, type: 3}
 --- !u!1 &396553076
@@ -321,7 +326,7 @@ GameObject:
   - component: {fileID: 396553080}
   - component: {fileID: 396553079}
   - component: {fileID: 396553078}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -937,7 +942,7 @@ MonoBehaviour:
   groundCheck: {fileID: 318829064}
   ground:
     serializedVersion: 2
-    m_Bits: 53
+    m_Bits: 256
   movementSpeed: 12
   throwForce: 2000
   rotationSpeed: 200
