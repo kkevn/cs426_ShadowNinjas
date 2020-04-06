@@ -2,15 +2,19 @@
 
 “Shadow Ninjas” is a single-player stealth-based puzzle platformer where the player must avoid getting caught in the light while attempting to traverse towards the goal.
 
-## Design Document
+Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANioezbgUWlbjrvE/edit?usp=sharing) to view our design document.
 
-[Google Doc](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANioezbgUWlbjrvE/edit?usp=sharing)
+| Authors |
+| ----------- |
+| Kevin Kowalski |
+| Marcin Perkowski |
+| Jonathan Vega |
 
-## Team Members
+## Assignment 7
 
-| First Name | Last Name |
-| ----------- | ----------- |
-| Kevin | Kowalski |
-| Marcin | Perkowski |
-| Jonathan | Vega |
+// todo
 
+
+## Assignment 6
+
+* Prototype of game
