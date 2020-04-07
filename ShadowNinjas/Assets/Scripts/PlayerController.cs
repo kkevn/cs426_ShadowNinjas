@@ -52,11 +52,12 @@ public class PlayerController : MonoBehaviour
         // throw shuriken on mouse click
         if (Input.GetButtonDown("Fire1"))
         {
-            GameObject thrownShuriken = GameObject.Instantiate(Shuriken, ShurikenSpawn.transform.position, ShurikenSpawn.transform.rotation) as GameObject;
-            thrownShuriken.GetComponent<Rigidbody>().AddForce(thrownShuriken.transform.forward * throwForce);
-
             // enable throw animation
             anim.SetTrigger("Throw");
+
+            // spawn and throw shuriken
+            GameObject thrownShuriken = GameObject.Instantiate(Shuriken, ShurikenSpawn.transform.position, ShurikenSpawn.transform.rotation) as GameObject;
+            thrownShuriken.GetComponent<Rigidbody>().AddForce(thrownShuriken.transform.forward * throwForce);
         }
     }
     // For cleaner movement despite fps difference
