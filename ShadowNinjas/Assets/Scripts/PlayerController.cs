@@ -33,9 +33,15 @@ public class PlayerController : MonoBehaviour
         // Checks if player is touching ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
 
-        // Gets the input of W and S
         move = Vector3.zero;
         move.z = Input.GetAxis("Vertical");
+        anim.SetBool("Walk", false);
+
+        // Gets the input of W and S
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        {
+            anim.SetBool("Walk", true);
+        }
 
         // If player is touching ground and pressed space he will jump
         if (Input.GetButtonDown("Jump") && isGrounded)
