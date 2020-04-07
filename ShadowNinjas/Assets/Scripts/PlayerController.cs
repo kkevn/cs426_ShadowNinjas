@@ -18,10 +18,13 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
     Vector3 move;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -49,6 +52,10 @@ public class PlayerController : MonoBehaviour
         // throw shuriken on mouse click
         if (Input.GetButtonDown("Fire1"))
         {
+            // enable throw animation
+            anim.SetTrigger("Throw");
+
+            // spawn and throw shuriken
             GameObject thrownShuriken = GameObject.Instantiate(Shuriken, ShurikenSpawn.transform.position, ShurikenSpawn.transform.rotation) as GameObject;
             thrownShuriken.GetComponent<Rigidbody>().AddForce(thrownShuriken.transform.forward * throwForce);
         }
