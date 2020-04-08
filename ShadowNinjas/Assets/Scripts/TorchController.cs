@@ -18,6 +18,8 @@ public class TorchController : MonoBehaviour {
 
     private Light[] lights;
 
+    private SphereCollider sphere;
+
     private bool wasHit = false;
     private bool isExtinguished = false;
 
@@ -29,6 +31,9 @@ public class TorchController : MonoBehaviour {
 		
 		// grab audio component
 		source = GetComponent<AudioSource>();
+
+        // grab detection collider
+        sphere = GetComponent<SphereCollider>();
     }
 
     // Update is called once per frame
@@ -66,6 +71,9 @@ public class TorchController : MonoBehaviour {
 			
 			// play sound effect (extinguish sound)
 			source.Play();
+
+            // disable detection collider
+            sphere.enabled = false;
         }
     }
 }
