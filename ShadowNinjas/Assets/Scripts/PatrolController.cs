@@ -36,6 +36,7 @@ public class PatrolController : MonoBehaviour {
 
         anim = GetComponent<Animator>();
 
+        // set period between sound based on movement speed
         period = 2.0f / movementSpeed;
     }
 
@@ -61,11 +62,8 @@ public class PatrolController : MonoBehaviour {
         if (Time.time > nextTimeToPlay) {
             nextTimeToPlay += period;
             int index = Random.Range(0, step_sounds.Count);
-            Debug.Log("i:\t" + index);
             step_sounds[index].Play();
-            //step_sounds[1].Play();
         }
-        
 
         // get current distance from target waypoint and check if we reached it to get new target waypoint
         float distance = Vector3.Distance(transform.position, TargetWaypoint.position);
