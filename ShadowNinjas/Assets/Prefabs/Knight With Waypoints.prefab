@@ -29,6 +29,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 4, z: 1}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!135 &2087182212
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867189602255217448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &2087182207
 AudioSource:
   m_ObjectHideFlags: 0
@@ -454,19 +467,6 @@ MonoBehaviour:
   - {fileID: 2087182209}
   - {fileID: 2087182208}
   - {fileID: 2087182207}
---- !u!135 &2087182212
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1867189602255217448}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2087182211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: fb054aa2d67c6fc4f82217552c44630b,
         type: 3}
       propertyPath: m_Name
-      value: Knight (1)
+      value: Knight With Waypoints
       objectReference: {fileID: 0}
     - target: {fileID: 6159864436195360518, guid: fb054aa2d67c6fc4f82217552c44630b,
         type: 3}
