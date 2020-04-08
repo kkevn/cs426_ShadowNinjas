@@ -1641,8 +1641,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas With Win and Lose Msg
       objectReference: {fileID: 0}
+    - target: {fileID: 7040378486081525827, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Level Complete!
+
+
+        < Next level in (5) seconds >'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040378486081525827, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 524decd244eed35429ccc556b6410fe2, type: 3}
+--- !u!1 &657031415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1603284184341333919, guid: 524decd244eed35429ccc556b6410fe2,
+    type: 3}
+  m_PrefabInstance: {fileID: 657031414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &670238921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2016,17 +2035,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.89
+      value: 47.13
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.742371e-17
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.99
+      value: -20.52
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
@@ -3397,12 +3416,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd9c620d3ed261440bfca94abb1c5e18, type: 3}
---- !u!1 &1069454217 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3929846406014638730, guid: 524decd244eed35429ccc556b6410fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 657031414}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1078677450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4962831348041519041, guid: cd9c620d3ed261440bfca94abb1c5e18,
@@ -4737,7 +4750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83f7231e6fb4614fa65b6d18de9daff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCompleteMsg: {fileID: 1069454217}
+  levelCompleteMsg: {fileID: 657031415}
 --- !u!65 &2098001035
 BoxCollider:
   m_ObjectHideFlags: 0
