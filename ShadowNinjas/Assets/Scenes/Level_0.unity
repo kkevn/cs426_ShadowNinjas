@@ -3310,6 +3310,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3349708986492286483, guid: 1014d3b5c1ca4d443b8296d682d0fdf3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1014d3b5c1ca4d443b8296d682d0fdf3, type: 3}
 --- !u!4 &1567731167 stripped

@@ -16,6 +16,9 @@ public class TorchController : MonoBehaviour {
 
     private Light[] lights;
 
+    private bool wasHit = false;
+    private bool isExtinguished = false;
+
     // Start is called before the first frame update
     void Start() {
 
@@ -25,16 +28,36 @@ public class TorchController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
+
+        // if flagged as hit
+        if (/*lights[0].enabled &&*/ wasHit) {
+
+            foreach (Light light in lights) {
+
+                // decrease angle and intensity of light
+                light.spotAngle -= 0.05f;
+                light.range -= 0.5f;
+                light.intensity -= 0.05f;
+
+                // disable lights
+                if (light.spotAngle <= 0) {
+                    light.enabled = false;
+                    wasHit = false;
+                    isExtinguished = true;
+                }
+            }
+        }
     }
 
-    // When hit by object tagged "Weapon", remove light source from the torch
+    // When lit and hit by object tagged "Weapon", destroy light source
     private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.CompareTag("Weapon")) {
-            foreach (Light light in lights) {
-                light.enabled = false;
-                system.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-            }
+        if (other.gameObject.CompareTag("Weapon") && isExtinguished == false) {
+
+            // flag as hit
+            wasHit = true;
+
+            // stop particle system
+            system.Stop(true, ParticleSystemStopBehavior.StopEmitting);
         }
     }
 }
