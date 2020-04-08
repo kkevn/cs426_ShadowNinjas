@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class winTrigger : MonoBehaviour {
     public GameObject levelCompleteMsg;
@@ -14,6 +15,7 @@ public class winTrigger : MonoBehaviour {
 
     public IEnumerator Close(float x) {
         yield return new WaitForSeconds(x);
-        Application.Quit();
+        SceneManager.LoadScene("Level_1");
+        //Application.Quit();
     }
 }

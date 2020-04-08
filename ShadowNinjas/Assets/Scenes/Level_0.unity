@@ -2648,8 +2648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShurikenSpawn: {fileID: 1815059544}
-  Shuriken: {fileID: 3276198233124274852, guid: bd0c229fa4b43a34798b1abd77a77526,
-    type: 3}
+  Shuriken: {fileID: 171642, guid: c00e85788ad86034880d5c8600b57600, type: 3}
   playerBody: {fileID: 756286674}
   groundCheck: {fileID: 1243199981}
   ground:
