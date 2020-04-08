@@ -11,6 +11,8 @@ public class TorchController : MonoBehaviour {
             return _CachedSystem;
         }
     }
+	
+	AudioSource source;
 
     private ParticleSystem _CachedSystem;
 
@@ -24,6 +26,9 @@ public class TorchController : MonoBehaviour {
 
         // build list of light sources in the torch
         lights = this.gameObject.GetComponentsInChildren<Light>(true);
+		
+		// grab audio component
+		source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -58,6 +63,9 @@ public class TorchController : MonoBehaviour {
 
             // stop particle system
             system.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+			
+			// play sound effect (extinguish sound)
+			source.Play();
         }
     }
 }
