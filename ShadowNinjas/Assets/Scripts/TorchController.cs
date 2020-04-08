@@ -59,9 +59,9 @@ public class TorchController : MonoBehaviour {
         }
     }
 
-    // When lit and hit by object tagged "Weapon", destroy light source
+    // When torch is lit and hitbox hit by object tagged "Weapon", destroy light source
     private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.CompareTag("Weapon") && isExtinguished == false) {
+        if (other.contacts[0].thisCollider.transform.gameObject.name == "Hitbox" && other.gameObject.CompareTag("Weapon") && isExtinguished == false) {
 
             // flag as hit
             wasHit = true;
