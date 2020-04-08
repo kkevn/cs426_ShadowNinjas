@@ -23,6 +23,10 @@ public class PatrolController : MonoBehaviour {
 
     private Animator anim;
 
+    public List<AudioSource> step_sounds = new List<AudioSource>();
+    private float nextTimeToPlay = 0.0f;
+    private float period;
+
     // Start is called before the first frame update
     void Start() {
 
@@ -31,6 +35,8 @@ public class PatrolController : MonoBehaviour {
         lastWaypointIndex = waypoints.Count;
 
         anim = GetComponent<Animator>();
+
+        period = 2.0f / movementSpeed;
     }
 
     // Update is called once per frame
@@ -50,6 +56,16 @@ public class PatrolController : MonoBehaviour {
         // move towards rotate smoothly to face current waypoint target
         transform.position = Vector3.MoveTowards(transform.position, TargetWaypoint.position, movementStep);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotationToTarget, rotatetStep);
+
+        // play random step sound effect every period seconds
+        if (Time.time > nextTimeToPlay) {
+            nextTimeToPlay += period;
+            int index = Random.Range(0, step_sounds.Count);
+            Debug.Log("i:\t" + index);
+            step_sounds[index].Play();
+            //step_sounds[1].Play();
+        }
+        
 
         // get current distance from target waypoint and check if we reached it to get new target waypoint
         float distance = Vector3.Distance(transform.position, TargetWaypoint.position);
