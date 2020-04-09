@@ -10,53 +10,64 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 | Marcin Perkowski |
 | Jonathan Vega |
 
+---
+
 ## Assignment 7
 
-Link: https://drive.google.com/file/d/1nkBw8exgEvCeIwK_hdSFpuGgEhPbKTyx/view?usp=sharing
+### Ready-to-play Download:
+* GitHub Release: https://github.com/kkowal28/cs426_ShadowNinjas/releases/tag/v0.7
+* Google Drive mirror: https://drive.google.com/file/d/1nkBw8exgEvCeIwK_hdSFpuGgEhPbKTyx/view?usp=sharing
 
-Demo:
+#### Demo:
   Get to goal by avoiding enemy AI path, extinguish torches in your path by shooting them, push crates to jump higher, and platform your way to the goal of first level. Second level (not finished) has archers lined up in firing range that you must avoid when they shoot.
   
-Puzzle:
+#### Puzzles:
   * Avoid stationary and moving light sources
   * Push crates to navigate higher
-  * Avoid enemy bows (lose trigger not implemented)
+  * Avoid enemy bows (on second leve, lose trigger not implemented here)
 
-Textures:
-  * stone wall
-  * dirt and grass models
-  * wood crates
+#### Textures:
+  * stone wall (*Kevin*)
+  * dirt and grass models (*Jonathan*)
+  * wood crates (*Marcin*)
   
-Audio:
-  * Extinguishing torches
-  * Enemy footsteps
-  * Enemy shooting arrow from bow
+#### Audio:
+  * Extinguishing torches (*Jonathan*)
+  * Enemy footsteps (*Kevin*)
+  * Enemy shooting arrow from bow (*Marcin*)
   
-AI:
-  * First level has 2 AI, each patrolling a path
+#### AI:
+  * First level has 2 AI, each patrolling a path (*Kevin*)
     * AI on grass moves in waypoint loop
     * AI on castle walls backtracks when reaching end of path
-  * Second level has archers firing at random intervals
+  * Second level has archers firing at random intervals (*Marcin*)
   
-Physics:
-  * Particle fire physics on torches and flaming arrow
-  * Arrows being shot includes flight physics
+#### Physics:
+  * Particle fire physics on torches (*Kevin*) and flaming arrow (*Marcin*)
+  * Arrows being shot includes flight physics (*Marcin*)
 
-Lights:
-  * Moving AI holds a hand torch for a moving light source
-  * Arrows are flaming and light up path
+#### Lights:
+  * Moving AI holds a hand torch for a moving light source (*Kevin*)
+  * Arrows are flaming and light up path (*Marcin*)
   
-Animation:
-  * Enemy AI
-    * shoot bow animation
-    * idle lookout animation
-    * walk with torch animation
-  * Ninja
-    * sneak walk animation
-    * idle animation
-    * throw ninja star animation
+#### Animations:
+  * **Enemy AI**
+    * shoot bow animation (*Kevin*)
+    * idle lookout animation (*Kevin*)
+    * walk with torch animation (*Kevin*)
+  * **Ninja**
+    * sneak walk animation (*Marcin*)
+    * jump animation (*Jonathan*)
+    * idle animation (*Kevin*)
+    * throw ninja star animation (*Kevin*)
+    
+#### Rationale:
+  Enemies are from a medieval-like nation and so they built a castle out of stones. To prepare for the invasion, they scattered their supply crates throughout the castle grounds and are guarding them with nightly patrols. However, the enemy helmets are difficult to see through and so they can only see brightly lit areas usually near torches. As they patrol, they make sounds depending on the surface material they are walking on.
   
+  Enemies are also practicing their archery skills and so they've lined up to create a practicing firing range, igniting their arrows so that they can see where it lands as they practice. 
 
+---
+  
 ## Assignment 6
 
 * Prototype of game
