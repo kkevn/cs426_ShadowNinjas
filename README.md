@@ -12,6 +12,22 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 
 ---
 
+## Assignment 8
+
+### Ready-to-play Download:
+* GitHub Release: 
+
+#### Demo:
+  //todo
+  
+#### Audio:
+  * //todo
+
+#### UI:
+  * //todo
+
+---
+
 ## Assignment 7
 
 ### Ready-to-play Download:
