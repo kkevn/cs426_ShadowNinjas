@@ -15,16 +15,29 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 ## Assignment 8
 
 ### Ready-to-play Download:
-* GitHub Release: 
+* GitHub Release: https://github.com/kkowal28/cs426_ShadowNinjas/releases/tag/v0.8
 
 #### Demo:
   //todo
   
 #### Audio:
-  * //todo
+  * **Background**
+    * Main menu music (*Kevin*)
+    * Ambient wind during levels (*Marcin*)
+  * **Sound Effects**
+    * Shuriken thrown (*Kevin*)
+    * Gong when beating a level (*Kevin*)
+    * Crates being pushed (*Marcin*)
+    * Torches burning (*Marcin*)
 
 #### UI:
-  * //todo
+  * Main menu (*Kevin*)
+  * Pause menu (*Kevin*)
+  * Lock-on indicator (*Kevin*)
+  * Tip text (*Marcin*)
+  * Tip text theme adjustment (*Kevin*)
+  * Better win/lose message (*Marcin*)
+  * Improved lighting to better see player character (*Marcin*)
 
 ---
 
