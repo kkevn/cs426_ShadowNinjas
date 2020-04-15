@@ -12,7 +12,7 @@ public class winTrigger : MonoBehaviour {
         if (other.gameObject.CompareTag("Player")) {
             levelCompleteMsg.SetActive(true);
             gong.Play();
-            StartCoroutine(Close(5));
+            StartCoroutine(Close(3));
         }
     }
 
