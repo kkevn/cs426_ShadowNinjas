@@ -24,11 +24,14 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
   * **Background**
     * Main menu music (*Kevin*)
     * Ambient wind during levels (*Marcin*)
+    * Crickets chirping (*Jonathan*)
   * **Sound Effects**
     * Shuriken thrown (*Kevin*)
     * Gong when beating a level (*Kevin*)
     * Crates being pushed (*Marcin*)
     * Torches burning (*Marcin*)
+    * Enemy alerted (*Jonathan*)
+    * Falling down sound (*Jonathan*)
 
 #### UI:
   * Main menu (*Kevin*)
@@ -38,6 +41,7 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
   * Tip text theme adjustment (*Kevin*)
   * Better win/lose message (*Marcin*)
   * Improved lighting to better see player character (*Marcin*)
+  * Start phrase (*Jonathan*)
 
 ---
 
