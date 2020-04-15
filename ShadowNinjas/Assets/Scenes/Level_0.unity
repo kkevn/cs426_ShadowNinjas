@@ -3086,6 +3086,7 @@ Transform:
   - {fileID: 1315375036}
   - {fileID: 963799828}
   - {fileID: 1162132017}
+  - {fileID: 473530809}
   - {fileID: 2098001036}
   - {fileID: 1463168908}
   m_Father: {fileID: 0}
@@ -17306,7 +17307,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 410618767}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2098001037
 AudioSource:
