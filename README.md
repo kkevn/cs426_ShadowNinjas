@@ -18,7 +18,7 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 * GitHub Release: https://github.com/kkowal28/cs426_ShadowNinjas/releases/tag/v0.8
 
 #### Demo:
-  //todo
+  We've extended and prettied our game a bit more. This time, the first level starts the player in a safe zone in the forest. From there, the player is lead down to the castle that the ninja must navigate similarily to the last assignment's level. Knocking out torches is much better now with a lock-on feature. The second level is a work in progress but will feature archers shooting in a firing range that the ninja must avoid while also trying to collect 2 keys that will open the door to the fortress to take the player to the final level!
   
 #### Audio:
   * **Background**
