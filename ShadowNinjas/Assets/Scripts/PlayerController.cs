@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask ground;
     //public AudioSource sound;
 
+    public AudioSource throw1, throw2;
+
     public float movementSpeed = 12f;
     public float throwForce = 100f;
     public float rotationSpeed = 200f;
@@ -81,6 +83,14 @@ public class PlayerController : MonoBehaviour
         {
             // enable throw animation
             anim.SetTrigger("Throw");
+
+            // play a throw sound effect
+            if (Random.Range(0, 2) == 0) {
+                throw1.Play();
+            }
+            else {
+                throw2.Play();
+            }
 
             // spawn and throw shuriken at direction of current target
             GameObject thrownShuriken = GameObject.Instantiate(Shuriken, ShurikenSpawn.transform.position, ShurikenSpawn.transform.rotation) as GameObject;
