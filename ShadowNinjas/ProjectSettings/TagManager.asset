@@ -9,6 +9,7 @@ TagManager:
   - Weapon
   - Arrow
   - LoseMsg
+  - Target
   layers:
   - Default
   - TransparentFX

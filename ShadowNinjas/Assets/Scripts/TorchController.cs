@@ -21,7 +21,7 @@ public class TorchController : MonoBehaviour {
     private SphereCollider sphere;
 
     private bool wasHit = false;
-    private bool isExtinguished = false;
+    public bool isExtinguished = false;
 
     // Start is called before the first frame update
     void Start() {
@@ -50,7 +50,7 @@ public class TorchController : MonoBehaviour {
                 light.intensity -= 0.05f;
 
                 // disable lights
-                if (light.spotAngle <= 0) {
+                if (light.range <= 0f) {
                     light.enabled = false;
                     wasHit = false;
                     isExtinguished = true;
@@ -61,7 +61,8 @@ public class TorchController : MonoBehaviour {
 
     // When torch is lit and hitbox hit by object tagged "Weapon", destroy light source
     private void OnCollisionEnter(Collision other) {
-        if (other.contacts[0].thisCollider.transform.gameObject.name == "Hitbox" && other.gameObject.CompareTag("Weapon") && isExtinguished == false) {
+
+        if (other.contacts[0].thisCollider.transform.gameObject.name.Contains("Hitbox") == true && other.gameObject.CompareTag("Weapon") && isExtinguished == false) {
 
             // flag as hit
             wasHit = true;
