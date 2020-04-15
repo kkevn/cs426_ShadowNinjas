@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public Transform playerBody;
     public Transform groundCheck;
     public LayerMask ground;
+    //public AudioSource sound;
 
     public float movementSpeed = 12f;
     public float throwForce = 2000f;
@@ -19,12 +20,14 @@ public class PlayerController : MonoBehaviour
     Vector3 move;
 
     private Animator anim;
+    //private Collision collision;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        //sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,11 @@ public class PlayerController : MonoBehaviour
         move = Vector3.zero;
         move.z = Input.GetAxis("Vertical");
         anim.SetBool("Walk", false);
+
+        //if(collision.collider.gameObject.tag == "Crate")
+        //{
+        //    sound.Play();
+        //}
 
         // Gets the input of W and S
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))

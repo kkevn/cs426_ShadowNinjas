@@ -4,6 +4,7 @@ public class Arrow : MonoBehaviour
 {
     Rigidbody arrow;
     public float lifeTimer = 10f;
+    public AudioSource burn;
     private float timer;
     private bool hit = false;
 
@@ -12,6 +13,7 @@ public class Arrow : MonoBehaviour
     {
         arrow = GetComponent<Rigidbody>();
         transform.rotation = Quaternion.LookRotation(arrow.velocity);
+        burn.Play();
     }
 
     // Update is called once per frame

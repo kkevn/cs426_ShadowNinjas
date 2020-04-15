@@ -24,6 +24,7 @@ public class PatrolController : MonoBehaviour {
     private Animator anim;
 
     public List<AudioSource> step_sounds = new List<AudioSource>();
+    public AudioSource burn;
     private float nextTimeToPlay = 0.0f;
     private float period;
 
@@ -35,6 +36,8 @@ public class PatrolController : MonoBehaviour {
         lastWaypointIndex = waypoints.Count;
 
         anim = GetComponent<Animator>();
+
+        burn.Play();
 
         // set period between sound based on movement speed
         period = 2.0f / movementSpeed;
