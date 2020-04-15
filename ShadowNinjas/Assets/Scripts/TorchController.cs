@@ -12,7 +12,8 @@ public class TorchController : MonoBehaviour {
         }
     }
 	
-	AudioSource source;
+	public AudioSource source;
+    public AudioSource burn;
 
     private ParticleSystem _CachedSystem;
 
@@ -30,7 +31,8 @@ public class TorchController : MonoBehaviour {
         lights = this.gameObject.GetComponentsInChildren<Light>(true);
 		
 		// grab audio component
-		source = GetComponent<AudioSource>();
+		//source = GetComponent<AudioSource>();
+        //burn = GetComponent<AudioSource>();
 
         // grab detection collider
         sphere = GetComponent<SphereCollider>();
@@ -72,6 +74,8 @@ public class TorchController : MonoBehaviour {
 			
 			// play sound effect (extinguish sound)
 			source.Play();
+
+            burn.Stop();
 
             // disable detection collider
             sphere.enabled = false;

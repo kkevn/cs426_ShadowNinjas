@@ -10,6 +10,7 @@ TagManager:
   - Arrow
   - LoseMsg
   - Target
+  - Crate
   layers:
   - Default
   - TransparentFX
