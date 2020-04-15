@@ -3330,6 +3330,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas With Win and Lose Msg
       objectReference: {fileID: 0}
+    - target: {fileID: 5133656491021089648, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6495333984771418913, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
       propertyPath: m_AnchoredPosition.y

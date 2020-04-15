@@ -67,7 +67,6 @@ public class PlayerController : MonoBehaviour
         // If player is touching ground and pressed space he will jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            Debug.Log("jump");
             rb.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
 			anim.Play("Standing Jump");
         }
