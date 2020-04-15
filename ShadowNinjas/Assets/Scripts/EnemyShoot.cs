@@ -20,6 +20,7 @@ public class EnemyShoot : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
         elapsed += Time.deltaTime;
         
         // shoot every 5 (length of animation) to maxTimeBeweenShots seconds

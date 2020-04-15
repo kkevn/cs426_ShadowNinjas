@@ -2,9 +2,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class loseTrigger : MonoBehaviour {
     public GameObject levelLoseMsg;
-
+	public AudioSource yamete;
+	
+	
     // Trigger a win if the player enters the region
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
@@ -14,7 +18,13 @@ public class loseTrigger : MonoBehaviour {
     }
 
     public IEnumerator Close(float x) {
-        yield return new WaitForSeconds(x);
+		
+		if(yamete != null) {
+		yamete.Play();	
+		}
+		
+		
+        yield return new WaitForSeconds(x-1);
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
         levelLoseMsg.SetActive(false);

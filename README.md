@@ -12,6 +12,39 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 
 ---
 
+## Assignment 8
+
+### Ready-to-play Download:
+* GitHub Release: https://github.com/kkowal28/cs426_ShadowNinjas/releases/tag/v0.8
+
+#### Demo:
+  We've extended and prettied our game a bit more. This time, the first level starts the player in a safe zone in the forest. From there, the player is lead down to the castle that the ninja must navigate similarily to the last assignment's level. Knocking out torches is much better now with a lock-on feature. The second level is a work in progress but will feature archers shooting in a firing range that the ninja must avoid while also trying to collect 2 keys that will open the door to the fortress to take the player to the final level!
+  
+#### Audio:
+  * **Background**
+    * Main menu music (*Kevin*)
+    * Ambient wind during levels (*Marcin*)
+    * Crickets chirping (*Jonathan*)
+  * **Sound Effects**
+    * Shuriken thrown (*Kevin*)
+    * Gong when beating a level (*Kevin*)
+    * Crates being pushed (*Marcin*)
+    * Torches burning (*Marcin*)
+    * Enemy alerted (*Jonathan*)
+    * Falling down sound (*Jonathan*)
+
+#### UI:
+  * Main menu (*Kevin*)
+  * Pause menu (*Kevin*)
+  * Lock-on indicator (*Kevin*)
+  * Tip text (*Marcin*)
+  * Tip text theme adjustment (*Kevin*)
+  * Better win/lose message (*Marcin*)
+  * Improved lighting to better see player character (*Marcin*)
+  * Start phrase (*Jonathan*)
+
+---
+
 ## Assignment 7
 
 ### Ready-to-play Download:
