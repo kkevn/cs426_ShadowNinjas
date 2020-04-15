@@ -3281,7 +3281,49 @@ PrefabInstance:
     - target: {fileID: 1267090129577615730, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
       propertyPath: m_Text
-      value: You Have Been Spotted! Abort The Mission...
+      value: 'You Have Been Spotted & Captured!
+
+        Try again'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267090129577615730, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267090129577615730, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603284184341333919, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013983977616650234, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452485001551084018, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452485001551084018, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452485001551084018, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452485001551084018, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -54
       objectReference: {fileID: 0}
     - target: {fileID: 5133656491021089648, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
@@ -3291,17 +3333,39 @@ PrefabInstance:
     - target: {fileID: 6495333984771418913, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -31.300049
+      value: -64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495333984771418913, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495333984771418913, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495333984771418913, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 396
       objectReference: {fileID: 0}
     - target: {fileID: 7040378486081525827, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
       propertyPath: m_Text
-      value: Great Job! Onto The Next Area...
+      value: 'Great Job!
+
+        Onto The Next Area . . .'
       objectReference: {fileID: 0}
     - target: {fileID: 7040378486081525827, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
       propertyPath: m_FontData.m_HorizontalOverflow
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7040378486081525827, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 524decd244eed35429ccc556b6410fe2, type: 3}
