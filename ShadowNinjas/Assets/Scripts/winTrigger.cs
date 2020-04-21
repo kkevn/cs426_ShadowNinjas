@@ -51,7 +51,6 @@ public class winTrigger : MonoBehaviour {
             if(tmp == (1000 * (SavedInfo.life + SavedInfo.shuriken)))
             {
                 tmp++;
-                Debug.LogError("We good");
                 savingText.gameObject.SetActive(true);
                 SaveSystem.SavePlayer(playerStats);
             }
