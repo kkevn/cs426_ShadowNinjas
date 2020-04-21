@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: -6777362837281356345}
   m_Layer: 0
   m_Name: Torch
-  m_TagString: Untagged
+  m_TagString: Lose
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -471,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 5630335417864655653}
   burn: {fileID: -6777362837281356345}
+  isExtinguished: 0
 --- !u!82 &5630335417864655653
 AudioSource:
   m_ObjectHideFlags: 0
@@ -593,6 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoseMsg: {fileID: 0}
+  yamete: {fileID: 0}
 --- !u!82 &-6777362837281356345
 AudioSource:
   m_ObjectHideFlags: 0

@@ -11,6 +11,10 @@ TagManager:
   - LoseMsg
   - Target
   - Crate
+  - Life1
+  - Life2
+  - Life3
+  - Lose
   layers:
   - Default
   - TransparentFX

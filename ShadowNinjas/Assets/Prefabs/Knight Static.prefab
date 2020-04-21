@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 2620496665319135203}
   - component: {fileID: 5902636195895810061}
   m_Layer: 0
-  m_Name: Knight (3)
-  m_TagString: Untagged
+  m_Name: Knight Static
+  m_TagString: Lose
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoseMsg: {fileID: 0}
+  yamete: {fileID: 0}
 --- !u!1 &605608170545501818
 GameObject:
   m_ObjectHideFlags: 0

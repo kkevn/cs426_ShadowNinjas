@@ -467,6 +467,7 @@ MonoBehaviour:
   - {fileID: 2087182209}
   - {fileID: 2087182208}
   - {fileID: 2087182207}
+  burn: {fileID: 0}
 --- !u!114 &2087182211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoseMsg: {fileID: 0}
+  yamete: {fileID: 0}
 --- !u!1001 &7694534217676814881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,6 +548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Knight With Waypoints
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: fb054aa2d67c6fc4f82217552c44630b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
       objectReference: {fileID: 0}
     - target: {fileID: 6159864436195360518, guid: fb054aa2d67c6fc4f82217552c44630b,
         type: 3}

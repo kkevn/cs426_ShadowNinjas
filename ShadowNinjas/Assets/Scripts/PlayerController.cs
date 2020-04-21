@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Transform playerBody;
     public Transform groundCheck;
     public LayerMask ground;
+    public PlayerStats playerStats;
     //public AudioSource sound;
 
     public AudioSource throw1, throw2;
@@ -78,8 +79,10 @@ public class PlayerController : MonoBehaviour
             playerBody.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
 
         // throw shuriken on mouse click
-        if (Input.GetButtonDown("Fire1") && canThrow == true)
+        if (Input.GetButtonDown("Fire1") && canThrow == true && playerStats.shuriken > 0)
         {
+            playerStats.UseShuriken();
+
             // enable throw animation
             anim.SetTrigger("Throw");
 
