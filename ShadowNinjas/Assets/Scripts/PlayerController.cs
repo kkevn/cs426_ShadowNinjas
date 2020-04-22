@@ -8,13 +8,14 @@ public class PlayerController : MonoBehaviour
     public Transform playerBody;
     public Transform groundCheck;
     public LayerMask ground;
+    public PlayerStats playerStats;
     //public AudioSource sound;
 
     public AudioSource throw1, throw2;
 
     public float movementSpeed = 12f;
     public float throwForce = 100f;
-    public float rotationSpeed = 200f;
+    public float rotationSpeed = 50f;
     public float groundDistance = 0.4f;
     public float jumpHeight = 3f;
 
@@ -49,8 +50,9 @@ public class PlayerController : MonoBehaviour
         // Checks if player is touching ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
 
-        move = Vector3.zero;
-        move.z = Input.GetAxis("Vertical");
+        // OLD MOVEMENT CODE
+        //move = Vector3.zero;
+        //move.z = Input.GetAxis("Vertical");
         anim.SetBool("Walk", false);
 
         //if(collision.collider.gameObject.tag == "Crate")
@@ -58,11 +60,50 @@ public class PlayerController : MonoBehaviour
         //    sound.Play();
         //}
 
-        // Gets the input of W and S
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
-        {
+        // rotate and move player in one of 4 directions based on input
+        if (Input.GetKey(KeyCode.W)) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 180f, 0), rotationSpeed * Time.deltaTime);
+            move.z = movementSpeed;
+            transform.Translate(move * Input.GetAxis("Vertical") * Time.deltaTime);
             anim.SetBool("Walk", true);
         }
+        else if (Input.GetKey(KeyCode.S)) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, 0), rotationSpeed * Time.deltaTime);
+            move.z = -movementSpeed;
+            transform.Translate(move * Input.GetAxis("Vertical") * Time.deltaTime);
+            anim.SetBool("Walk", true);
+        }
+        else if (Input.GetKey(KeyCode.A)) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 90f, 0), rotationSpeed * Time.deltaTime);
+            move.z = -movementSpeed;
+            transform.Translate(move * Input.GetAxis("Horizontal") * Time.deltaTime);
+            anim.SetBool("Walk", true);
+        }
+        else if (Input.GetKey(KeyCode.D)) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, -90f, 0), rotationSpeed * Time.deltaTime);
+            move.z = movementSpeed;
+            transform.Translate(move * Input.GetAxis("Horizontal") * Time.deltaTime);
+            anim.SetBool("Walk", true);
+        }
+        
+
+        // OLD MOVEMENT CODE
+        // Gets the input of W and S
+        /*if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        {
+            //anim.SetBool("Walk", true);
+            transform.Translate(move * Input.GetAxis("Vertical") * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
+            transform.Translate(move * Input.GetAxis("Horizontal") * Time.deltaTime);
+        }
+
+        // rotate player on A and D keys
+        if (Input.GetKey(KeyCode.D))
+            playerBody.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+        else if (Input.GetKey(KeyCode.A))
+            playerBody.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
+        */
 
         // If player is touching ground and pressed space he will jump
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -71,15 +112,11 @@ public class PlayerController : MonoBehaviour
 			anim.Play("Standing Jump");
         }
 
-        // rotate player on A and D keys
-        if (Input.GetKey(KeyCode.D))
-            playerBody.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-        else if (Input.GetKey(KeyCode.A))
-            playerBody.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
-
         // throw shuriken on mouse click
-        if (Input.GetButtonDown("Fire1") && canThrow == true)
+        if (Input.GetButtonDown("Fire1") && canThrow == true && playerStats.shuriken > 0)
         {
+            playerStats.UseShuriken();
+
             // enable throw animation
             anim.SetTrigger("Throw");
 
@@ -133,6 +170,7 @@ public class PlayerController : MonoBehaviour
     // For cleaner movement despite fps difference
     private void FixedUpdate()
     {
-        transform.Translate(move * movementSpeed * Time.fixedDeltaTime);
+        // OLD MOVEMENT CODE
+        //transform.Translate(move * movementSpeed * Time.fixedDeltaTime);
     }
 }

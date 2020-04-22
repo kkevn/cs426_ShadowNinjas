@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 
 public class loseTrigger : MonoBehaviour {
     public GameObject levelLoseMsg;
 	public AudioSource yamete;
-	
-	
+
     // Trigger a win if the player enters the region
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {

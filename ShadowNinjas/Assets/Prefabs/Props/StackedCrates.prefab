@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5267048954287450259}
   - component: {fileID: 5077172899358860723}
   - component: {fileID: 1305295382614967324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TopCrate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 9067234842397265915}
   - component: {fileID: -6212551398805444724}
   - component: {fileID: 3144622032407403217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StackedCrates
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 1545852950265097575}
   - component: {fileID: 3622508199101743154}
   - component: {fileID: 3015052467307167542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BottomCrate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
