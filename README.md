@@ -12,6 +12,35 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 
 ---
 
+## Assignment 9
+
+### Ready-to-play Download:
+* GitHub Release: https://github.com/kkowal28/cs426_ShadowNinjas/releases/tag/v0.9
+
+#### Demo:
+  We've improved the game with some more menus such as better controls screen, opening cutscene, end-of-level screen, and ending credits. For this demo, navigating the first level should be more clear on where to go; the solution to the first level is the same as the previous demos but this time there is more than one level to complete!
+
+#### Shaders:
+  * AutoTiling (*Kevin*)
+  * Lighting (*Marcin*)
+  * Wireframe (*Jonathan*)
+  
+#### Feedback Improvements:
+  * Improved existing controls screen to be more helpful (*Kevin*)
+  * Improved movement controls (*Kevin*) 
+  
+#### Forms of Writing:
+  * Opening cutscene (*Kevin*)
+  * End credits (*Jonathan*)
+  
+#### Other:
+  * Saving/Loading game data (*Marcin*)
+  * End-of-level screen (*Marcin*)
+  * Score, shuriken, and lives counters on screen (*Marcin*)
+  * Extend the game with more levels (*Everyone*)
+
+---
+
 ## Assignment 8
 
 ### Ready-to-play Download:
