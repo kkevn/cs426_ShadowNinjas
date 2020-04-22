@@ -34,10 +34,18 @@ public class Arrow : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
         if(collision.collider.tag != "Arrow")
         {
             hit = true;
             Stick();
+        }
+
+        if(collision.collider.tag == "Player")
+        {
+            hit = true;
+            Stick();
+            Debug.Log("died");
         }
     }
 
