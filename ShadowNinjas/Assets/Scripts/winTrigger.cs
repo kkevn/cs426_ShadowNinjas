@@ -64,6 +64,15 @@ public class winTrigger : MonoBehaviour {
 
     void next()
     {
-        SceneManager.LoadScene("Level_1");
+
+        // hard code level 1 as last level for now
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Level_1") {
+            SceneManager.LoadScene("Credits");
+        }
+        else {
+            SceneManager.LoadScene("Level_1");
+        }
+        
     }
 }

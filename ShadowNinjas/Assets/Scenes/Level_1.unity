@@ -580,6 +580,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4335041703233596218, guid: f095947cad9a33c4187f7f91203941c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 4335041704294094979, guid: f095947cad9a33c4187f7f91203941c9,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -996,7 +1001,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &45089793
@@ -1279,7 +1284,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &51342598
@@ -1602,6 +1607,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4335041703233596218, guid: f095947cad9a33c4187f7f91203941c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 4335041704294094979, guid: f095947cad9a33c4187f7f91203941c9,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -1867,6 +1877,11 @@ PrefabInstance:
       propertyPath: levelLoseMsg
       value: 
       objectReference: {fileID: 1947776818}
+    - target: {fileID: 2398352111954029883, guid: 626e8fcefa70f4c409646f5db995bffe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 5938354136089528200, guid: 626e8fcefa70f4c409646f5db995bffe,
         type: 3}
       propertyPath: m_Name
@@ -2391,7 +2406,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &141906869
@@ -3308,7 +3323,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &181313365
@@ -3852,6 +3867,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4335041703233596218, guid: f095947cad9a33c4187f7f91203941c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 4335041704294094979, guid: f095947cad9a33c4187f7f91203941c9,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -4285,7 +4305,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &228021538
@@ -4359,7 +4379,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &233098856
@@ -4433,7 +4453,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &233503829
@@ -4675,7 +4695,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &282054490
@@ -5016,7 +5036,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &299867083
@@ -5866,7 +5886,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &387908397
@@ -6263,7 +6283,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &400048907
@@ -6276,7 +6296,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 123.69
+      value: 124.14
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
@@ -6286,7 +6306,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.77
+      value: -45.51
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e60959fe16b88934793fc9fadb2edcdb,
         type: 3}
@@ -6381,12 +6401,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shuriken: 0
   life: 0
-  shuriken1: {fileID: 1896130037}
-  shuriken2: {fileID: 311241215}
-  shuriken3: {fileID: 1895724428}
-  life1: {fileID: 1185182319}
-  life2: {fileID: 1678602227}
-  life3: {fileID: 1237578822}
+  shuriken1: {fileID: 1681192365}
+  shuriken2: {fileID: 1254926720}
+  shuriken3: {fileID: 2016842787}
+  life1: {fileID: 649973967}
+  life2: {fileID: 633555936}
+  life3: {fileID: 1978900482}
 --- !u!114 &400048911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7265,7 +7285,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &455142066
@@ -7744,7 +7764,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &488295607
@@ -8057,7 +8077,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!4 &511131701 stripped
@@ -8137,7 +8157,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &515710324
@@ -8541,7 +8561,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &564415695
@@ -11763,7 +11783,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!4 &796927761 stripped
@@ -12879,7 +12899,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &896025269
@@ -12889,6 +12909,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4335041703233596218, guid: f095947cad9a33c4187f7f91203941c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 4335041704294094979, guid: f095947cad9a33c4187f7f91203941c9,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -13181,7 +13206,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &928476351
@@ -15781,7 +15806,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1093036719
@@ -15855,7 +15880,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1095817318
@@ -16405,7 +16430,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1145503671
@@ -16479,7 +16504,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1148053171
@@ -16672,7 +16697,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1155747281
@@ -16991,7 +17016,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1174652146
@@ -17421,7 +17446,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1193528863
@@ -17584,7 +17609,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1197817784
@@ -17594,6 +17619,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2398352111954029883, guid: 626e8fcefa70f4c409646f5db995bffe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 5938354136089528200, guid: 626e8fcefa70f4c409646f5db995bffe,
         type: 3}
       propertyPath: m_Name
@@ -17922,7 +17952,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1217828484
@@ -19335,7 +19365,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1289795607
@@ -19345,6 +19375,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4335041703233596218, guid: f095947cad9a33c4187f7f91203941c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 4335041704294094979, guid: f095947cad9a33c4187f7f91203941c9,
         type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -19959,7 +19994,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1324361459
@@ -20453,7 +20488,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1350551474
@@ -21274,7 +21309,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1462559991
@@ -21435,7 +21470,7 @@ GameObject:
   - component: {fileID: 1473042856}
   - component: {fileID: 1473042855}
   m_Layer: 5
-  m_Name: Score
+  m_Name: Score_new
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21749,7 +21784,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1484670295
@@ -22145,6 +22180,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4335041703233596218, guid: f095947cad9a33c4187f7f91203941c9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lose
+      objectReference: {fileID: 0}
     - target: {fileID: 4335041704294094979, guid: f095947cad9a33c4187f7f91203941c9,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -22497,7 +22537,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1531043141
@@ -22571,7 +22611,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1534849071
@@ -22796,7 +22836,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1542602050
@@ -22945,7 +22985,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!4 &1558843927 stripped
@@ -23610,7 +23650,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1598132268
@@ -24056,7 +24096,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1612766450
@@ -24486,7 +24526,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1648480736
@@ -26804,7 +26844,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &1856704451
@@ -27069,7 +27109,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1867691991
@@ -27296,7 +27336,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1 &1895724425
@@ -28270,6 +28310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013983977616650234, guid: 524decd244eed35429ccc556b6410fe2,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelLose_new
       objectReference: {fileID: 0}
     - target: {fileID: 3452485001551084018, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
@@ -29740,7 +29785,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &2022523869
@@ -30852,7 +30897,7 @@ PrefabInstance:
         type: 3}
       propertyPath: levelLoseMsg
       value: 
-      objectReference: {fileID: 4657872431865817283}
+      objectReference: {fileID: 1947776818}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30e06d3f3cfdf847abb971d19d90c6e, type: 3}
 --- !u!1001 &2144454160
