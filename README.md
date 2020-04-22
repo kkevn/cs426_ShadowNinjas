@@ -18,7 +18,7 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 * GitHub Release: https://github.com/kkowal28/cs426_ShadowNinjas/releases/tag/v0.9
 
 #### Demo:
-  We've improved the game with some more menus such as better controls screen, opening cutscene, end-of-level screen, and ending credits. For this demo, navigating the first level should be more clear on where to go; the solution to the first level is the same as the previous demos but this time there is more than one level to complete!
+  We've improved the game with some more menus such as better controls screen, opening cutscene, end-of-level screen, and ending credits. For this demo, navigating the first level should be more clear on where to go; the solution to the first level is the same as the previous demos but this time there is more than one level to complete! The next level requires the player to platform on the mountain near spawn and push down the crate to use as a stepping stone to get on top of the stacked crates also at spawn. Then, the player must jump onto the ledge in front of the crates, sneak past the patrol, and jump to the next pillar that is straight across. From there, jump to the next pillar, push down the crate, and push it towards the rock blocking the gate. After getting past the gate, avoid the firing range of archers and make it safely across to the next set of patrols. But becareful, there's lots of patrols and it's hard to keep track of where they're going!
 
 #### Shaders:
   * AutoTiling (*Kevin*)
