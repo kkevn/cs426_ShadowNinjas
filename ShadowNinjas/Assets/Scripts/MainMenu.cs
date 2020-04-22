@@ -5,10 +5,14 @@ public class MainMenu : MonoBehaviour {
 
     public GameObject main;
     public GameObject controls;
+    public GameObject cutscene;
 
 
     public void StartGame() {
-        SceneManager.LoadScene("Level_0");
+        main.SetActive(false);
+        controls.SetActive(false);
+        cutscene.SetActive(true);
+        //SceneManager.LoadScene("Level_0");
     }
 
     public void ShowControls() {
