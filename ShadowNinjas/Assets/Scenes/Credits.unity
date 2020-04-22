@@ -1513,8 +1513,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14, y: -1603.9999}
-  m_SizeDelta: {x: 120, y: 50}
+  m_AnchoredPosition: {x: 14, y: -1573}
+  m_SizeDelta: {x: 750, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607978229
 MonoBehaviour:
@@ -1601,7 +1601,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Credits
+  m_Text: 'University of Illinois at Chicago
+
+    CS 428: Video Game Design
+
+    Final
+    Project
+
+
+    Credits'
 --- !u!222 &1607978231
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1644,6 +1652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 1626952155}
   controls: {fileID: 0}
+  cutscene: {fileID: 0}
 --- !u!114 &1626952158
 MonoBehaviour:
   m_ObjectHideFlags: 0
