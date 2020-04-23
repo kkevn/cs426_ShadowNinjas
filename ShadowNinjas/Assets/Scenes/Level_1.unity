@@ -6187,6 +6187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shuriken: 0
   life: 0
+  sceneIndex: 0
   shuriken1: {fileID: 1896130037}
   shuriken2: {fileID: 311241215}
   shuriken3: {fileID: 1895724428}
@@ -26089,7 +26090,7 @@ PrefabInstance:
     - target: {fileID: 2013983977616650234, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}
       propertyPath: m_Name
-      value: LevelLose_new
+      value: LevelLose
       objectReference: {fileID: 0}
     - target: {fileID: 3452485001551084018, guid: 524decd244eed35429ccc556b6410fe2,
         type: 3}

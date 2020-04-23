@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerStats : MonoBehaviour
 {
     public float shuriken;
     public float life;
+    public int sceneIndex;
     public Image shuriken1;
     public Image shuriken2;
     public Image shuriken3;
@@ -12,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     public Image life2;
     public Image life3;
     private bool lost;
+    AsyncOperation asyncLoad;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +23,8 @@ public class PlayerStats : MonoBehaviour
         shuriken = 3;
         life = 3;
         lost = false;
+        PlayerData data = SaveSystem.LoadPlayer();
+        sceneIndex = data.scene;
     }
 
     // Update is called once per frame
@@ -123,6 +129,7 @@ public class PlayerStats : MonoBehaviour
     public void LoadPlayer()
     {
         PlayerData data = SaveSystem.LoadPlayer();
+        LoadLevel();
         shuriken = data.shuriken;
         life = data.life;
         Vector3 position;
@@ -130,5 +137,15 @@ public class PlayerStats : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         transform.position = position;
+    }
+
+    IEnumerator LoadLevel()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        asyncLoad = SceneManager.LoadSceneAsync(data.scene, LoadSceneMode.Single);
+        while(!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
