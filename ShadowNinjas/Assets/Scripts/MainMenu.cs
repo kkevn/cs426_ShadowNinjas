@@ -50,4 +50,10 @@ public class MainMenu : MonoBehaviour {
         //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
+
+    public void LoadLevel()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        SceneManager.LoadScene(data.scene + 1);
+    }
 }
