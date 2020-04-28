@@ -50,9 +50,6 @@ public class PlayerController : MonoBehaviour
         // Checks if player is touching ground
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
 
-        // OLD MOVEMENT CODE
-        //move = Vector3.zero;
-        //move.z = Input.GetAxis("Vertical");
         anim.SetBool("Walk", false);
 
         //if(collision.collider.gameObject.tag == "Crate")
@@ -85,25 +82,6 @@ public class PlayerController : MonoBehaviour
             transform.Translate(move * Input.GetAxis("Horizontal") * Time.deltaTime);
             anim.SetBool("Walk", true);
         }
-        
-
-        // OLD MOVEMENT CODE
-        // Gets the input of W and S
-        /*if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
-        {
-            //anim.SetBool("Walk", true);
-            transform.Translate(move * Input.GetAxis("Vertical") * Time.deltaTime);
-        }
-        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) {
-            transform.Translate(move * Input.GetAxis("Horizontal") * Time.deltaTime);
-        }
-
-        // rotate player on A and D keys
-        if (Input.GetKey(KeyCode.D))
-            playerBody.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
-        else if (Input.GetKey(KeyCode.A))
-            playerBody.rotation *= Quaternion.Euler(0, -rotationSpeed * Time.deltaTime, 0);
-        */
 
         // If player is touching ground and pressed space he will jump
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -132,9 +110,6 @@ public class PlayerController : MonoBehaviour
             GameObject thrownShuriken = GameObject.Instantiate(Shuriken, ShurikenSpawn.transform.position, ShurikenSpawn.transform.rotation) as GameObject;
             Vector3 directionToTarget = Target.transform.position - thrownShuriken.transform.position;
             thrownShuriken.GetComponent<Rigidbody>().AddForce(directionToTarget * throwForce);
-
-            // rotate player to face current target [BUGGY, causes occasional strange physics on player]
-            //transform.rotation = Quaternion.LookRotation(directionToTarget);
 
             // remove ability to throw and remove lock on
             canThrow = false;
@@ -166,11 +141,5 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }    
-    }
-    // For cleaner movement despite fps difference
-    private void FixedUpdate()
-    {
-        // OLD MOVEMENT CODE
-        //transform.Translate(move * movementSpeed * Time.fixedDeltaTime);
     }
 }

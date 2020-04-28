@@ -6194,6 +6194,7 @@ MonoBehaviour:
   life1: {fileID: 1185182319}
   life2: {fileID: 1678602227}
   life3: {fileID: 1237578822}
+  levelLoseMsg: {fileID: 1947776818}
 --- !u!114 &400048911
 MonoBehaviour:
   m_ObjectHideFlags: 0

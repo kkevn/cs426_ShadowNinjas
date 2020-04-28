@@ -14,8 +14,10 @@ public class PlayerStats : MonoBehaviour
     public Image life1;
     public Image life2;
     public Image life3;
+    public GameObject levelLoseMsg;
     private bool lost;
     AsyncOperation asyncLoad;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -119,6 +121,13 @@ public class PlayerStats : MonoBehaviour
             UseLife();
             lost = true;
         }
+        else if(other.gameObject.CompareTag("Arrow") && !lost)
+        {
+            UseLife();
+            lost = true;
+            levelLoseMsg.SetActive(true);
+            StartCoroutine(Close(3));
+        }
     }
 
     public void SavePlayer()
@@ -147,5 +156,13 @@ public class PlayerStats : MonoBehaviour
         {
             yield return null;
         }
+    }
+
+    IEnumerator Close(float x)
+    {
+        yield return new WaitForSeconds(x - 1);
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+        levelLoseMsg.SetActive(false);
     }
 }

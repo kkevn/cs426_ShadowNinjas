@@ -23987,6 +23987,10 @@ PrefabInstance:
       propertyPath: life3
       value: 
       objectReference: {fileID: 590383325}
+    - target: {fileID: 756286682, guid: e6c9c417f81079e469a322f4d3074809, type: 3}
+      propertyPath: levelLoseMsg
+      value: 
+      objectReference: {fileID: 714495624}
     - target: {fileID: 1673979546346380741, guid: e6c9c417f81079e469a322f4d3074809,
         type: 3}
       propertyPath: m_Name
