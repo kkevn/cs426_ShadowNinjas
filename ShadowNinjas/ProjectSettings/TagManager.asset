@@ -15,6 +15,7 @@ TagManager:
   - Life2
   - Life3
   - Lose
+  - Ammo
   layers:
   - Default
   - TransparentFX

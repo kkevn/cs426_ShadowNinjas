@@ -128,6 +128,12 @@ public class PlayerStats : MonoBehaviour
             levelLoseMsg.SetActive(true);
             StartCoroutine(Close(3));
         }
+
+        if(other.gameObject.CompareTag("Ammo"))
+        {
+            shuriken = 3;
+            other.gameObject.SetActive(false);
+        }
     }
 
     public void SavePlayer()
