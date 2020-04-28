@@ -9996,12 +9996,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shuriken: 0
   life: 0
+  sceneIndex: 0
   shuriken1: {fileID: 1242899719}
   shuriken2: {fileID: 1289043359}
   shuriken3: {fileID: 1180014303}
   life1: {fileID: 1656734389}
   life2: {fileID: 1148102021}
   life3: {fileID: 590383325}
+  levelLoseMsg: {fileID: 714495624}
 --- !u!1001 &766301375
 PrefabInstance:
   m_ObjectHideFlags: 0
