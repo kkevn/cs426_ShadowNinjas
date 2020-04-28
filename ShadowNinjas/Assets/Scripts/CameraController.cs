@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour {
     void Update() {
         
         // pan camera to start from goal, then give player control of camera
-        if (pan == true && transform.position.x >= ViewOfStart.position.x - 5.0f) {
+        if (pan == true && transform.position.x >= ViewOfStart.position.x - 5.0f && transform.position.z <= ViewOfStart.position.z + 5.0f) {
             pan = false;
         }
         else {
