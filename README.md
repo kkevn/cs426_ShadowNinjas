@@ -19,8 +19,9 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 
 #### Demo:
   This release features a more complete game, containg 4 levels and some additional improvements here and there. The first two levels can be compeleted the same way they've been described before in previous releases. However, the final two levels are a bit more challenging.
-  //level 3
-  //level 4
+  The third level requires the player to first turn left or right, but the player must go both ways before using the middle path. After reaching the end of both side paths, the player must push down some crates to create a bridge for the center path. Crossing this path and avoiding some archers reveals the goal.
+  The fourth and final level requires the user to traverse a maze-like hallway with patrolling enemies. The goal is to reach the explosive barrels, collect them, and take the left path all the way down from the level's intersection to plant the explosives, and plant them again from the right path, and you'll beat the game! Careful, you'll need to avoid patrols and make efficient use of your shuriken.
+  The credits will roll and at the end, a button to the main menu will present itself.
   
 #### Feedback Improvements:
   * Camera pans from goal to indicate where to go (*Kevin*)
