@@ -359,7 +359,11 @@ MonoBehaviour:
 
 
 
-    Save/Load Tutorial'
+    Save/Load Tutorial
+
+
+    Item Pickup
+    Sound'
 --- !u!222 &119073332
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -681,7 +685,10 @@ MonoBehaviour:
     https://media.istockphoto.com/vectors/blue-background-of-cartoon-summer-forest-on-a-moonlit-night-vector-id1162751932?k=6&m=1162751932&s=612x612&w=0&h=2XGWyJQ3hi_-9YjF8HYbEuWVisNEQtgJKdjZr7cTBTg=
 
 
-    https://www.youtube.com/watch?v=XOjd_qU2Ido'
+    https://www.youtube.com/watch?v=XOjd_qU2Ido
+
+
+    https://www.zapsplat.com/music/2-x-swords-hit-and-scrape-1/'
 --- !u!222 &187492223
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1277,6 +1284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: MaxDistance
       value: 4.698391
+      objectReference: {fileID: 0}
+    - target: {fileID: -6777362837281356345, guid: e30e06d3f3cfdf847abb971d19d90c6e,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1307733750209508157, guid: e30e06d3f3cfdf847abb971d19d90c6e,
         type: 3}

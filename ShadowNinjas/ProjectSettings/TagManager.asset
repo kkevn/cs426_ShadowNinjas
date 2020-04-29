@@ -15,6 +15,10 @@ TagManager:
   - Life2
   - Life3
   - Lose
+  - Ammo
+  - Retrieve
+  - Plant2
+  - Plant1
   layers:
   - Default
   - TransparentFX

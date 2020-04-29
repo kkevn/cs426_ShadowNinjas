@@ -5,9 +5,11 @@ public class MainMenu : MonoBehaviour {
 
     public GameObject main;
     public GameObject controls;
-    public GameObject controls1;
-    public GameObject controls2;
-    public GameObject controls3;
+    public GameObject movement;
+    public GameObject aiming;
+    public GameObject lives;
+    public GameObject ammo;
+    public GameObject goal;
     public GameObject cutscene;
 
 
@@ -19,35 +21,57 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void ShowControls() {
-        controls3.SetActive(false);
+        goal.SetActive(false);
         controls.SetActive(true);
     }
 
     public void ShowMovement() {
         main.SetActive(false);
-        controls1.SetActive(true);
+        movement.SetActive(true);
     }
 
     public void ShowAiming() {
-        controls1.SetActive(false);
-        controls2.SetActive(true);
+        movement.SetActive(false);
+        aiming.SetActive(true);
     }
 
+    public void ShowAmmo() {
+        aiming.SetActive(false);
+        ammo.SetActive(true);
+    }
     public void ShowLives() {
-        controls2.SetActive(false);
-        controls3.SetActive(true);
+        ammo.SetActive(false);
+        lives.SetActive(true);
+    }
+
+    public void ShowGoal() {
+        lives.SetActive(false);
+        goal.SetActive(true);
     }
 
     public void LeaveControls() {
         main.SetActive(true);
         controls.SetActive(false);
-        controls1.SetActive(false);
-        controls2.SetActive(false);
-        controls3.SetActive(false);
+        movement.SetActive(false);
+        aiming.SetActive(false);
+        lives.SetActive(false);
+        ammo.SetActive(false);
+        goal.SetActive(false);
     }
 
     public void ExitGame() {
         //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
+    }
+
+    public void GotoCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void LoadLevel()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        SceneManager.LoadScene(data.scene + 1);
     }
 }

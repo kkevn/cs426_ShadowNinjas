@@ -28,6 +28,5 @@ public class loseTrigger : MonoBehaviour {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
         levelLoseMsg.SetActive(false);
-        //Application.Quit();
     }
 }
