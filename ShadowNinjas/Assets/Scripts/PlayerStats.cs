@@ -15,7 +15,14 @@ public class PlayerStats : MonoBehaviour
     public Image life2;
     public Image life3;
     public GameObject levelLoseMsg;
+    public GameObject retrieve;
+    public GameObject plant;
+    public GameObject explosive1;
+    public GameObject explosive2;
+    public GameObject goal;
     private bool lost;
+    private bool explosives;
+    public int planted;
     AsyncOperation asyncLoad;
     
 
@@ -25,6 +32,8 @@ public class PlayerStats : MonoBehaviour
         shuriken = 3;
         life = 3;
         lost = false;
+        explosives = false;
+        planted = 0;
         PlayerData data = SaveSystem.LoadPlayer();
         sceneIndex = data.scene;
     }
@@ -32,6 +41,11 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(planted == 2)
+        {
+            goal.gameObject.SetActive(true);
+        }
+
         if(life > SavedInfo.life)
         {
             life = SavedInfo.life;
@@ -136,6 +150,54 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.CompareTag("Retrieve"))
+        {
+            retrieve.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Plant1") || other.gameObject.CompareTag("Plant2"))
+        {
+            plant.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Retrieve"))
+        {
+            retrieve.SetActive(true);
+        }
+
+        if(other.gameObject.CompareTag("Plant1") || other.gameObject.CompareTag("Plant2"))
+        {
+            plant.SetActive(true);
+        }
+
+        if (other.gameObject.CompareTag("Retrieve") && Input.GetKey(KeyCode.E))
+        {
+            other.gameObject.SetActive(false);
+            retrieve.gameObject.SetActive(false);
+            explosives = true;
+        }
+
+        if (other.gameObject.CompareTag("Plant1") && Input.GetKey(KeyCode.E) && explosives)
+        {
+            other.gameObject.SetActive(false);
+            explosive1.SetActive(true);
+            plant.gameObject.SetActive(false);
+            planted += 1;
+        }
+
+        if (other.gameObject.CompareTag("Plant2") && Input.GetKey(KeyCode.E) && explosives)
+        {
+            other.gameObject.SetActive(false);
+            explosive2.SetActive(true);
+            plant.gameObject.SetActive(false);
+            planted += 1;
+        }
+    }
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
