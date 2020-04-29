@@ -70,6 +70,11 @@ public class winTrigger : MonoBehaviour {
         if (currentScene.name == "Level_1") {
             SceneManager.LoadScene("Credits");
         }
+		
+		else if(currentScene.name == "Level_2") {
+			SceneManager.LoadScene("Level_3");
+		}
+		
         else {
             SceneManager.LoadScene("Level_1");
         }
