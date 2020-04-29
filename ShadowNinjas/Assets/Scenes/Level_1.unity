@@ -19063,6 +19063,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[2]
       value: 
       objectReference: {fileID: 969731228}
+    - target: {fileID: 4335041704294095004, guid: f095947cad9a33c4187f7f91203941c9,
+        type: 3}
+      propertyPath: levelLoseMsg
+      value: 
+      objectReference: {fileID: 1947776818}
     - target: {fileID: 5695017646093451657, guid: f095947cad9a33c4187f7f91203941c9,
         type: 3}
       propertyPath: m_Name
