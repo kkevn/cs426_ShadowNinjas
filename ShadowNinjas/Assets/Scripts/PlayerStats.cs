@@ -22,7 +22,7 @@ public class PlayerStats : MonoBehaviour
     public GameObject goal;
     private bool lost;
     private bool explosives;
-    public int planted;
+    private int planted;
     AsyncOperation asyncLoad;
     
 
@@ -36,6 +36,12 @@ public class PlayerStats : MonoBehaviour
         planted = 0;
         PlayerData data = SaveSystem.LoadPlayer();
         sceneIndex = data.scene;
+
+        if(SceneManager.GetActiveScene().buildIndex != SavedInfo.scene)
+        {
+            SavedInfo.scene = SceneManager.GetActiveScene().buildIndex;
+            SavedInfo.life = 3;
+        }
     }
 
     // Update is called once per frame
