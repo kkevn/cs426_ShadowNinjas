@@ -12,6 +12,32 @@ Click [here](https://docs.google.com/document/d/1GfetEonuZh1vZPsSSmyIRLoUsPLANio
 
 ---
 
+## Assignment 10
+
+### Ready-to-play Download:
+* GitHub Release: https://github.com/kkowal28/cs426_ShadowNinjas/releases/tag/v1.0
+
+#### Demo:
+  This release features a more complete game, containg 4 levels and some additional improvements here and there. The first two levels can be compeleted the same way they've been described before in previous releases. However, the final two levels are a bit more challenging.
+  //level 3
+  //level 4
+  
+#### Feedback Improvements:
+  * Camera pans from goal to indicate where to go (*Kevin*)
+  * Improved lighting and platforming on second level (*Kevin*) 
+  
+#### Miscellaneous:
+  * Added more to controls screen (*Kevin*)
+  * Improved opening cutscene to be more legible (*Kevin*)
+  * Minor improvements for first and second level (*Kevin*)
+  * Third level (*Jonathan*)
+  * Fourth level (*Marcin*) (*Marcin*)
+  * Shuriken replenish item (*Marcin*)
+  * Aura for shuriken replenish and goal (*Kevin*)
+  * Additional tweaks and fixes (*Everyone*)
+
+---
+
 ## Assignment 9
 
 ### Ready-to-play Download:
