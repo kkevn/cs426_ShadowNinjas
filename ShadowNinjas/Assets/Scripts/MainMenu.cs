@@ -64,6 +64,11 @@ public class MainMenu : MonoBehaviour {
         Application.Quit();
     }
 
+    public void GotoCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void LoadLevel()
     {
         PlayerData data = SaveSystem.LoadPlayer();
