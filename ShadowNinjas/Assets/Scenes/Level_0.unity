@@ -11327,7 +11327,7 @@ MonoBehaviour:
   xOffset: 0
   yOffset: 10
   zOffset: 10
-  pan: 0
+  pan: 1
   Player: {fileID: 756286674}
   ViewOfStart: {fileID: 760954275}
   ViewOfGoal: {fileID: 1909511274}
@@ -24207,6 +24207,10 @@ PrefabInstance:
       propertyPath: levelLoseMsg
       value: 
       objectReference: {fileID: 714495624}
+    - target: {fileID: 756286682, guid: e6c9c417f81079e469a322f4d3074809, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 1673979546346380741, guid: e6c9c417f81079e469a322f4d3074809,
         type: 3}
       propertyPath: m_Name

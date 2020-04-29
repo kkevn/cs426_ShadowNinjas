@@ -24,6 +24,8 @@ public class PlayerStats : MonoBehaviour
     private bool explosives;
     private int planted;
     AsyncOperation asyncLoad;
+
+    public Camera cam;
     
 
     // Start is called before the first frame update
@@ -99,6 +101,7 @@ public class PlayerStats : MonoBehaviour
             life1.enabled = true;
             life2.enabled = true;
             life3.enabled = false;
+            cam.GetComponentInParent<CameraController>().pan = false;
         }
         else if (life == 1)
         {

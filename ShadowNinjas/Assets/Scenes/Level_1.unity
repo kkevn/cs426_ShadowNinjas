@@ -6746,7 +6746,7 @@ MonoBehaviour:
   explosive1: {fileID: 0}
   explosive2: {fileID: 0}
   goal: {fileID: 0}
-  planted: 0
+  cam: {fileID: 1052516005}
 --- !u!114 &400048911
 MonoBehaviour:
   m_ObjectHideFlags: 0
