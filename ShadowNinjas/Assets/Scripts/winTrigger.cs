@@ -57,22 +57,13 @@ public class winTrigger : MonoBehaviour {
         }
     }
 
-    void menu()
+    public void menu()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
-    void next()
+    public void next()
     {
-
-        // hard code level 1 as last level for now
-        Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "Level_1") {
-            SceneManager.LoadScene("Credits");
-        }
-        else {
-            SceneManager.LoadScene("Level_1");
-        }
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
